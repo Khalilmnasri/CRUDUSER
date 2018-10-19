@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/consult.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/table.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="top-left">
+            <div class="navbar-header">
+                <a class="logo" href="#">
+                    <img src="img/Admin-candy.png" class="Admin-candy">
+                </a>
+                <a class="menu-logo" href="#"><i class="fa fa-bars"></i></a>
+            </div>
+           
+        </div>
+        <div class="top-right">
+            <div class="menu">
+                <div class="menu-left">
+                    <button class="search">
+                            <i class="fa fa-search"></i>
+                    </button>
+                <div class="search-hidden">
+                    <form class="search-form">
+                        <input class="search-input" type="text" placeholder="search">
+                        <button class="serach-btn" type="submit">
+                                <i class="fa fa-close"></i>
+                        </button>
+                    </form>
+                </div>    
+            <div class="notification">
+                <button class="notification-btn" type="button" id="notification">
+                        <i class="fa fa-bell"></i>
+                </button>
+            </div>
+            <div class="message">
+                    <button class="message-btn" type="button" id="message">
+                            <i class="fa fa-envelope"></i>
+            </div>
+            <div class="profil">
+                <a href="#"><img src="img/profil.jpg" class="profil-img"></a>
+            </div>
+            </div>
+        </div>
+    </header>
+    <aside>
+      <nav>
+          <div class="main-menu">
+              <ul class="navbar">
+                  <li>
+                        <h2 class="users">Users</h2>
+                 </li>
+                      <li class="add">
+                            <button type="button" value="submit" onclick="Add()" id="add"> Add</button>
+                    </li>
+                      <li class="list">
+                            <button type="button" value="submit" onclick="lister()" id="list"> List</button>
+                    </li>
+                    <li class="edit">
+                            <button type="button" value="submit" onclick="edit()" id="edit"> change</button>
+                    </li>
+              </ul>
+          </div>
+      </nav>
+    </aside>
+    <section>
+            <div class="inscription">
+                    <div class="contact">
+                        <form class="send">
+                            <span class="title">Inscription</span>
+                            <input disabled id="index">
+            
+                            <input type="text" id="name" placeholder="Name">
+                            <p id="output1"></p>
+                            <br>
+            
+                            <input type="text" id="email" placeholder="E-mail">
+                            <p id="output2"></p>
+                            <br>
+            
+                            <input type="date" id="date" placeholder="Date de naissance">
+                            <p id="output3"></p>
+                            <br>
+            
+                            <input type="text" id="pswd" name="passwordInput" placeholder="Your password">
+                            <p id="output"></p>
+            
+                            <div class="sign">
+                            <button type="button" value="Submit" onclick="register()" id="inscript"> inscription </button>
+                        </div>
+
+                        </form>
+                    </div>
+                    <br>
+                    <div id="dvcontainer"></div>
+
+                </div>
+            
+    </section>
+
+</body>
+</html>
